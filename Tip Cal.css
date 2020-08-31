@@ -1,0 +1,193 @@
+html, body {
+    min-width: 290px;
+    line-height: 1.6;
+    height: 100%;
+    width: 100%; 
+    background-color: black;
+    background-image: url(https://wallpapercave.com/wp/wp5207702.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#container {
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 40%;
+    height: auto;
+    min-height: 540px;
+    max-width: 500px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    color: white;
+}
+
+#title h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+#title {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(221, 70, 70, 0.466);
+    border-radius: 20px 20px 0 0;
+    border-bottom: 7px solid black;
+} 
+
+#calc-wrap {
+    margin: 25px;
+  
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0 0 5px 0;
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#billamt {
+    font-size: 14px;
+    color: white;
+    background-color: rgba(119, 119, 119, 0.692);
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    border: none;
+}
+
+#billamt:focus {
+    border: none;
+    outline: none;
+}
+
+#peopleamt {
+    font-size: 14px;
+    color: white;
+    background-color: rgba(119, 119, 119, 0.692);
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    border: none;
+}
+
+#peopleamt:focus {
+    border: none;
+    outline: none;
+}
+
+#serviceQual {
+    border: none;
+}
+
+.custom-select {
+    color: white;
+    background-color: rgba(77, 77, 77, 0.788);
+}
+
+#serviceQual:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    max-width: 130px;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: rgb(221, 70, 70);
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.74);
+    color: black;
+}
+
+#rst_btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#reset {
+  width: 70px;
+  height: 30px;
+  font-size: 1em;
+  display: none;
+}
+
+#totalTip h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#totalTip p {
+    text-align: center;
+    padding: 0;
+    margin: 8px;
+    line-height: 1.3;
+}
+
+#totalTip {
+    padding: 10px 0 0px 0;
+    display: none;
+}
+
+#tip {
+    font-size: 1.6em;
+}
+
+/* ----  for mobile  ----*/
+
+@media screen and (max-width: 800px) {
+    #container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #wrapper {
+        height: 600px;
+    }
+}
+
